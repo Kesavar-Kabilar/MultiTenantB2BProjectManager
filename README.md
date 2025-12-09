@@ -126,3 +126,8 @@ The application uses SQLite as its lightweight, serverless database to handle al
 
 ---
 
+## Seed Data
+
+The seed data process involves running a Python file (create_init_data.py that creates the initialize_data.sql) that creates a set of SQL INSERT commands. This mechanism, executed by the init_db() function during application startup, populates the SQLite database tables (like user, project, task, and discussion) with an initial set of test records. This ensures that the database is not empty when the application first runs, providing necessary base users and initial sample data for immediate testing and use of the application's features before any live data is created.
+
+---
